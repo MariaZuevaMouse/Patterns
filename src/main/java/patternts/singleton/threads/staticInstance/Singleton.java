@@ -3,7 +3,7 @@ package patternts.singleton.threads.staticInstance;
 public class Singleton {
     private static Singleton uniqueInstance = new Singleton();
 
-    public Singleton() {
+    private Singleton() {
     }
 
     public static Singleton getInstance(){
