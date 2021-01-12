@@ -17,12 +17,12 @@ public class MyRemoteImpl extends UnicastRemoteObject implements MyRemote {
     }
 
     public static void main(String[] args) {
-        try{
-            LocateRegistry.createRegistry(2099);
-            MyRemote service = new MyRemoteImpl();
-            Naming.rebind("RemoteHello", service);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+//        try{
+//            LocateRegistry.createRegistry(2099);
+//            MyRemote service = new MyRemoteImpl();
+//            Naming.rebind("RemoteHello", service);
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
     }
 }
